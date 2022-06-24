@@ -98,7 +98,7 @@ function SideModule(){
             <RenderCollapse />
             <RenderCollapse />
             <RenderCollapse />
-                <p className='settings'>Settings</p>
+            <p className='settings'><a href='./settings'>Settings</a> </p>
             </div>
         </div>
     )
@@ -179,6 +179,31 @@ function Products(){
             type={items[0].type}
             price={items[0].price}
         />
+         <Item 
+            img={items[0].imgURL}
+            title={items[0].title}
+            type={items[0].type}
+            price={items[0].price}
+        />
+         <Item 
+            img={items[0].imgURL}
+            title={items[0].title}
+            type={items[0].type}
+            price={items[0].price}
+        />
+         <Item 
+            img={items[0].imgURL}
+            title={items[0].title}
+            type={items[0].type}
+            price={items[0].price}
+        />
+         <Item 
+            img={items[0].imgURL}
+            title={items[0].title}
+            type={items[0].type}
+            price={items[0].price}
+        />
+        
         </div>
     )
 }

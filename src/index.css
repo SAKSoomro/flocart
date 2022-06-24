@@ -363,3 +363,120 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
 }
+
+/* settings page */
+
+.form-content{
+  text-transform: capitalize;
+  display: flex;
+  color: #808080;
+  justify-content: space-between;
+  max-width: 60%;
+}
+.form-content input{
+  text-transform: capitalize;
+  width: 25rem;
+  padding: 10px 0 10px 10px;
+  color: #808080;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+.form-input{
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus{
+ outline: none;
+}
+
+.account-info{
+  margin: 10% 0;
+  line-height: 0.1;
+}
+
+.dd-category{
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.autosync{
+  display: flex;
+  align-items: center;
+}
+.autosync p{
+  margin-right: 50px;
+}
+
+.form-one,
+.form-two{
+  max-width: 25%;
+}
+
+.bottom-terms{
+  width: 25rem;
+  line-height: 1;
+}
+
+.button-save{
+  color: rgb(255, 25, 25);
+  background-color: rgb(255, 200, 200);
+  border: none;
+  padding: 7px 15px ;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-left: 22rem;
+}
+
+.active{
+  color: orangered;
+}
+
+.settings-header{
+  text-transform: uppercase;
+}
+
+
+.settings a{
+  margin-top: 25%;
+}
+
+
+.settings-active{
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+
+/* payments page */
+
+.form{
+  color: #808080;
+}
+
+.form button{
+  color: #808080;
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  margin-right: 1px;
+}
+
+.form button:hover{
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+
+.download-links{
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.download-links a{
+  color: orangered;
+}
