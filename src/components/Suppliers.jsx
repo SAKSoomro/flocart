@@ -14,6 +14,7 @@ import { Search } from 'react-bootstrap-icons';
 import exLink from '../icons/external-link.png'
 import verified from '../icons/verified.png'
 import 'react-slideshow-image/dist/styles.css'
+import { Slide } from 'react-slideshow-image';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import product1 from '../icons/product1.png'
@@ -37,12 +38,12 @@ return (
         <div {...getCollapseProps()}>
             <div className="collapse-content">
                 <div className='nav-page-link'>
-                <div className='link-item active'>
+                <div className='link-item'>
                 <img className='avatar avatar-link' src={priceTag} />
                 <a href='/'>Directory</a>
                 </div>
 
-                <div className='link-item'>
+                <div className='link-item active'>
                 <img className='avatar avatar-link lidown' src={handshake} />
                 <a href='suppliers'>Partners</a>
                 </div>
@@ -76,133 +77,121 @@ function Sidemodule(){
                 </div>
                 <div className='link-item'>
                 <img className='avatar avatar-link al-b' src={gear} />
-                <a href='profile-settings'>Settings</a>
+                <a href='suppliers'>Settings</a>
                 </div>
                 <div className='link-item li'>
                 <img className='avatar avatar-link al-b' src={leftarrow} />
-               <i id='btn'> <a href='#'>Hide</a></i>
+                <a href='#'>Hide</a>
                 </div>
             </div>
         </div>
     )
 }
 
-function Subsidebar(){
-    return (
-        <div className='sub-sidebar'>
-        <p className='sub-sidebar-title'>browse by category</p>
-        <a href='#'>arts & crafts</a>
-        <a href='#'>automotive</a>
-        <a href='#'>babby</a>
-        <a href='#'>beauty & body</a>
-        <a href='#'>clothing & fashion</a>
-        <a href='#'>collections</a>
-        <a href='#'>electronics</a>
-        <a href='#'>fitness equipment</a>
-        <a href='#'>food & beverages</a>
-        <a href='#'>health & wellness</a>
-        <a href='#'>home & garden</a>
-        </div>
-    )
-}
-
-export function CarditemComponent(){
-
-    const responsive = {
-
-
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
-          
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
+function ProductCatalog(props){
 
     return (
-     
-        <Carousel
-        responsive={responsive}>
-        <div className="product-img"><img src={product1} /></div>
-        <div className="product-img"><img src={product3} /></div>
-        <div className="product-img"><img src={product4} /></div>
-        <div className="product-img"><img src={product3} /></div>
-        </Carousel>
-        
-    )
-}
-
-export function ProductCard(){
-
-
-    return (
-        <div className='product-card'>
-        <div className='card-header'>
-            <p className='card-title'>Blendjet</p>
-            <div className='verified'>
-            <img className='verified' src={verified} />
-            </div>     
-            <div className='ex-link'>
-            <img className='ex-link' src={exLink} />
+        <div className='product-catalog'>
+            <div className='product-catalog-img'>
+                <img src={product1} />
+                </div>
+                <div className='product-catalog-info'>
+                <div className='product-catalog-title'>
+                    BlendJet 2
+                </div>
+                <div className='product-price-second'>
+                  <span>
+                    <p>Retail</p>
+                    <p>$49.95-$87.65</p>
+                  </span>
+                  <span className='earn-span'>
+                    <p>Earn</p>
+                    <p>$25.65-$48.21</p>
+                  </span>
+                </div>
+                <div className='button-bottom partners-bb'>
+                    <a href='#' className='view-products'>View product</a>
+                </div>
+                <div className='purchases'>
+                    <p>Purchases:</p>
+                    <p>4</p>
+                </div>
+                <div className='revenue'>
+                    <p>Your Revenue:</p>
+                    <p>$177.69</p>
+                </div>
+                <div className='push-button'>
+                    <div>Pushed to store</div>
+                    <div className='switch-buttons'>
+                    <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                    </label>
+                    </div>
+                </div>
+                <div className='remove-product'>
+                    <a href='#' >Remove Product</a>
+                </div>
+                </div>
             </div>
-            </div>
-            <CarditemComponent />
-        <div className='card-bottom'>
-            <p>earn 15%</p>
-            <a href='allproducts'>view all products</a>
-        </div>
+    )
+}
+
+function Allbranditems(){
+    return (
+        <div className='product-catalog-items'>
+            <ProductCatalog />
+            <ProductCatalog />
+            <ProductCatalog />
+            <ProductCatalog />
         </div>
     )
 }
 
-function SubContent(){
+export function Footer(){
     return (
-        <div className='sub-content'>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+        <div className='footer'>
+        <p>terms & conditions | additional terms for brands | privacy policy | cookie policy | contact us</p>
+        <p className='powered-by'>powered by <span className='copyright-brand'>vyrl</span>2022</p>
         </div>
     )
 }
 
 function VerticleContent(){
     return (
-        <div className='verticle-content'>
+        <div className='verticle-content-second'>
             <div className='header-section'>
                 <p className='logo'>carro</p>
-                <p className='logo-des'>Sell more, together.</p>
-                <div className='searchbar-bg'>
-                <div className='searchbar'>
-            <i className='search-icon'><Search color='blue' /></i><input className='searchbar' placeholder='Find a brand...' />
-                </div>
-                </div>
+              </div>
+              <div className='header-nav'>
+                <p className='header-nav-title'>Your Partners</p>
+                <a className='active-nav' href='#'>suppliers</a>
+                <a href='retailers'>retailers</a>
+              </div>
+              <div className='top-header partners'>
+              <span className='logo-section partners-logo'>
+              <p className='secondary-logo partners-sec-logo'>Blendjet</p>
+              <img src={verified} />
+              </span>
+              <div className='exlink'>
+              <a href='#'>shop.blendjet.com</a>
+                <img src={exLink} />
+              </div>
+              </div>
+              <div className='page-title'>
+                <p className='earnings'>earn 15%</p>
+              </div>
+            <div className='suppliers-content  '>
+            <Allbranditems />
             </div>
-            <div className='sub-container'>
-                <div className='sub-sidebar'>
-                    <Subsidebar />
-                </div>
-                <div className='sub-content'>
-                    <SubContent />
-                </div>
+            <div className='footer-bar'>
+                <Footer />
             </div>
         </div>
     )
 }
 
-export default function Homepage(){
+export default function Suppliers(){
     return (
         <div className='container'>
             <div className='horizontal-content'>

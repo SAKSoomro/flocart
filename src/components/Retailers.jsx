@@ -10,15 +10,9 @@ import chat from '../icons/chat-bubbles-with-ellipsis.png'
 import gear from '../icons/gear.png'
 import leftarrow from '../icons/left.png'
 import bulb from '../icons/bulb.png'
-import { Search } from 'react-bootstrap-icons';
-import exLink from '../icons/external-link.png'
-import verified from '../icons/verified.png'
 import 'react-slideshow-image/dist/styles.css'
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import product1 from '../icons/product1.png'
-import product3 from '../icons/product3.png'
-import product4 from '../icons/product4.png'
+import sunstrip from '../img/sunstrip.png'
 
 
 function RenderCollapse(){
@@ -65,6 +59,27 @@ return (
 
 }
 
+
+function RenderProductCollapse(){
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+return (
+    <div className="collapsible">
+        <div className="collapse-products" {...getToggleProps()}>
+        <CollapseProductsHeader />
+        </div>
+        <div {...getCollapseProps()}>
+            <div className="collapse-products-content">
+                <CollapseProductsBody />
+                <CollapseProductsBody />
+                <CollapseProductsBody />
+            </div>
+        </div>
+    </div>
+    )
+
+}
+
+
 function Sidemodule(){
     return (
         <div className='side-module'>
@@ -80,129 +95,105 @@ function Sidemodule(){
                 </div>
                 <div className='link-item li'>
                 <img className='avatar avatar-link al-b' src={leftarrow} />
-               <i id='btn'> <a href='#'>Hide</a></i>
+                <a href='#'>Hide</a>
                 </div>
             </div>
         </div>
     )
 }
 
-function Subsidebar(){
+function CollapseProductsHeader(){
     return (
-        <div className='sub-sidebar'>
-        <p className='sub-sidebar-title'>browse by category</p>
-        <a href='#'>arts & crafts</a>
-        <a href='#'>automotive</a>
-        <a href='#'>babby</a>
-        <a href='#'>beauty & body</a>
-        <a href='#'>clothing & fashion</a>
-        <a href='#'>collections</a>
-        <a href='#'>electronics</a>
-        <a href='#'>fitness equipment</a>
-        <a href='#'>food & beverages</a>
-        <a href='#'>health & wellness</a>
-        <a href='#'>home & garden</a>
-        </div>
-    )
-}
-
-export function CarditemComponent(){
-
-    const responsive = {
-
-
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
-          
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
-
-    return (
-     
-        <Carousel
-        responsive={responsive}>
-        <div className="product-img"><img src={product1} /></div>
-        <div className="product-img"><img src={product3} /></div>
-        <div className="product-img"><img src={product4} /></div>
-        <div className="product-img"><img src={product3} /></div>
-        </Carousel>
-        
-    )
-}
-
-export function ProductCard(){
-
-
-    return (
-        <div className='product-card'>
-        <div className='card-header'>
-            <p className='card-title'>Blendjet</p>
-            <div className='verified'>
-            <img className='verified' src={verified} />
-            </div>     
-            <div className='ex-link'>
-            <img className='ex-link' src={exLink} />
+        <div className='collapse-products-header'>
+            <div className='cp-arrow'>
+                <ChevronDown />
             </div>
+            <div className='cp-email'>
+                <p>saksoomro@gmail.com</p>
             </div>
-            <CarditemComponent />
-        <div className='card-bottom'>
-            <p>earn 15%</p>
-            <a href='allproducts'>view all products</a>
-        </div>
+            <div className='cp-store'>
+                <p>my shopify store</p>
+            </div>
+            <div className='cp-products'>
+                <p>4</p>
+            </div>
+            <div className='cp-sales'>
+                <p>5</p>
+            </div>
+            <div className='cp-revenue'>
+                <p>$873.28</p>
+            </div>
+            <div className='cp-actions'>
+                <a href='#'>Message</a>
+                <a href='#'>Rem</a>
+            </div>
         </div>
     )
 }
 
-function SubContent(){
+function CollapseProductsBody(){
     return (
-        <div className='sub-content'>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+        <div className='collapse-products-body'>
+            <div className='cp-body-products'>
+                <img src={sunstrip} />
+                <p>Sunstrip</p>
+            </div>
+            <div className='cp-body-sales'>
+                <p>3</p>
+            </div>
+            <div className='cp-body-revenue'>
+                <p>$78.178</p>
+            </div>
+            <div className='cp-body-actions'>
+                <a href='#'>Rem</a>
+            </div>
+        </div>
+    )
+}
+
+
+function CollapseProducts(){
+    return (
+        <div className='collapse-products'>
+           <RenderProductCollapse />
+           <RenderProductCollapse />
+           <RenderProductCollapse />
+           <RenderProductCollapse />
+           <RenderProductCollapse />
+           <RenderProductCollapse />
         </div>
     )
 }
 
 function VerticleContent(){
     return (
-        <div className='verticle-content'>
+        <div className='verticle-content-second'>
             <div className='header-section'>
                 <p className='logo'>carro</p>
-                <p className='logo-des'>Sell more, together.</p>
-                <div className='searchbar-bg'>
-                <div className='searchbar'>
-            <i className='search-icon'><Search color='blue' /></i><input className='searchbar' placeholder='Find a brand...' />
-                </div>
-                </div>
-            </div>
-            <div className='sub-container'>
-                <div className='sub-sidebar'>
-                    <Subsidebar />
-                </div>
-                <div className='sub-content'>
-                    <SubContent />
-                </div>
+              </div>
+              <div className='header-nav'>
+                <p className='header-nav-title'>Your Partners</p>
+                <a className='active-nav' href='suppliers'>suppliers</a>
+                <a href='retailers'>retailers</a>
+              </div>
+              <div className='top-header retailers-header'>
+                <ul className='list'>
+                   <span className='email'><li>email</li></span>
+                    <li>shopify.store</li>
+                   <span className='products'><li>products</li> </span>
+                    <li>sales</li>
+                   <span className='revenue' > <li>revenue</li> </span>
+                    <li>actions</li>
+                </ul>
+              </div>
+            <div className='retailers-content  '>
+           <CollapseProducts />
             </div>
         </div>
     )
 }
 
-export default function Homepage(){
+export default function Retailers(){
     return (
         <div className='container'>
             <div className='horizontal-content'>

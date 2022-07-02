@@ -1,0 +1,382 @@
+[
+    {
+        "id": 7746346189052,
+        "title": "billowing pine",
+        "body_html": null,
+        "vendor": "MyCartTest",
+        "product_type": "",
+        "created_at": "2022-06-22T15:15:55-07:00",
+        "handle": "billowing-pine",
+        "updated_at": "2022-06-22T15:15:55-07:00",
+        "published_at": null,
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7746346189052",
+        "variants": [
+            {
+                "id": 43258238599420,
+                "product_id": 7746346189052,
+                "title": "Default Title",
+                "price": "2.91",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": null,
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-22T15:15:55-07:00",
+                "updated_at": "2022-06-22T15:15:55-07:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": null,
+                "weight": 0,
+                "weight_unit": "lb",
+                "inventory_item_id": 45353275588860,
+                "inventory_quantity": 0,
+                "old_inventory_quantity": 0,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43258238599420"
+            }
+        ],
+        "options": [
+            {
+                "id": 9881736610044,
+                "product_id": 7746346189052,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [],
+        "image": null
+    },
+    {
+        "id": 7746346221820,
+        "title": "green fire",
+        "body_html": null,
+        "vendor": "MyCartTest",
+        "product_type": "",
+        "created_at": "2022-06-22T15:15:55-07:00",
+        "handle": "green-fire",
+        "updated_at": "2022-06-22T15:15:55-07:00",
+        "published_at": null,
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7746346221820",
+        "variants": [
+            {
+                "id": 43258238632188,
+                "product_id": 7746346221820,
+                "title": "Default Title",
+                "price": "8.90",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": null,
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-22T15:15:55-07:00",
+                "updated_at": "2022-06-22T15:15:55-07:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": null,
+                "weight": 0,
+                "weight_unit": "lb",
+                "inventory_item_id": 45353275621628,
+                "inventory_quantity": 0,
+                "old_inventory_quantity": 0,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43258238632188"
+            }
+        ],
+        "options": [
+            {
+                "id": 9881736642812,
+                "product_id": 7746346221820,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [],
+        "image": null
+    },
+    {
+        "id": 7746346254588,
+        "title": "icy brook",
+        "body_html": null,
+        "vendor": "MyCartTest",
+        "product_type": "",
+        "created_at": "2022-06-22T15:15:55-07:00",
+        "handle": "icy-brook",
+        "updated_at": "2022-06-22T15:15:55-07:00",
+        "published_at": null,
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7746346254588",
+        "variants": [
+            {
+                "id": 43258238664956,
+                "product_id": 7746346254588,
+                "title": "Default Title",
+                "price": "3.95",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": null,
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-22T15:15:55-07:00",
+                "updated_at": "2022-06-22T15:15:55-07:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": null,
+                "weight": 0,
+                "weight_unit": "lb",
+                "inventory_item_id": 45353275654396,
+                "inventory_quantity": 0,
+                "old_inventory_quantity": 0,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43258238664956"
+            }
+        ],
+        "options": [
+            {
+                "id": 9881736675580,
+                "product_id": 7746346254588,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [],
+        "image": null
+    },
+    {
+        "id": 7737595068668,
+        "title": "Joe Cool Sweatshirt",
+        "body_html": "This is a thing I found on google images, buy it",
+        "vendor": "MyCartTest",
+        "product_type": "Apparel & Accessories",
+        "created_at": "2022-06-14T08:21:42-07:00",
+        "handle": "joe-cool-sweatshirt",
+        "updated_at": "2022-06-22T21:00:21-07:00",
+        "published_at": "2022-06-14T08:21:43-07:00",
+        "template_suffix": "",
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7737595068668",
+        "variants": [
+            {
+                "id": 43227991343356,
+                "product_id": 7737595068668,
+                "title": "Default Title",
+                "price": "1000.00",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": "shopify",
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-14T08:21:42-07:00",
+                "updated_at": "2022-06-14T08:21:42-07:00",
+                "taxable": true,
+                "barcode": "",
+                "grams": 13608,
+                "image_id": null,
+                "weight": 30,
+                "weight_unit": "lb",
+                "inventory_item_id": 45323005985020,
+                "inventory_quantity": 10,
+                "old_inventory_quantity": 10,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43227991343356"
+            }
+        ],
+        "options": [
+            {
+                "id": 9870143947004,
+                "product_id": 7737595068668,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [
+            {
+                "id": 37650905530620,
+                "product_id": 7737595068668,
+                "position": 1,
+                "created_at": "2022-06-14T08:21:44-07:00",
+                "updated_at": "2022-06-14T08:21:44-07:00",
+                "alt": null,
+                "width": 1329,
+                "height": 1500,
+                "src": "https://cdn.shopify.com/s/files/1/0647/8993/8428/products/B1i3u9-Q-KS._CLa_2140_2000_B1hHvoi6NES.png_0_0_2140_2000_0.0_0.0_2140.0_2000.0_AC_UL1500.jpg?v=1655220104",
+                "variant_ids": [],
+                "admin_graphql_api_id": "gid://shopify/ProductImage/37650905530620"
+            }
+        ],
+        "image": {
+            "id": 37650905530620,
+            "product_id": 7737595068668,
+            "position": 1,
+            "created_at": "2022-06-14T08:21:44-07:00",
+            "updated_at": "2022-06-14T08:21:44-07:00",
+            "alt": null,
+            "width": 1329,
+            "height": 1500,
+            "src": "https://cdn.shopify.com/s/files/1/0647/8993/8428/products/B1i3u9-Q-KS._CLa_2140_2000_B1hHvoi6NES.png_0_0_2140_2000_0.0_0.0_2140.0_2000.0_AC_UL1500.jpg?v=1655220104",
+            "variant_ids": [],
+            "admin_graphql_api_id": "gid://shopify/ProductImage/37650905530620"
+        }
+    },
+    {
+        "id": 7746346287356,
+        "title": "patient leaf",
+        "body_html": null,
+        "vendor": "MyCartTest",
+        "product_type": "",
+        "created_at": "2022-06-22T15:15:55-07:00",
+        "handle": "patient-leaf",
+        "updated_at": "2022-06-22T15:15:55-07:00",
+        "published_at": null,
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7746346287356",
+        "variants": [
+            {
+                "id": 43258238697724,
+                "product_id": 7746346287356,
+                "title": "Default Title",
+                "price": "2.01",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": null,
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-22T15:15:55-07:00",
+                "updated_at": "2022-06-22T15:15:55-07:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": null,
+                "weight": 0,
+                "weight_unit": "lb",
+                "inventory_item_id": 45353275687164,
+                "inventory_quantity": 0,
+                "old_inventory_quantity": 0,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43258238697724"
+            }
+        ],
+        "options": [
+            {
+                "id": 9881736708348,
+                "product_id": 7746346287356,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [],
+        "image": null
+    },
+    {
+        "id": 7746346320124,
+        "title": "spring waterfall",
+        "body_html": null,
+        "vendor": "MyCartTest",
+        "product_type": "",
+        "created_at": "2022-06-22T15:15:55-07:00",
+        "handle": "spring-waterfall",
+        "updated_at": "2022-06-22T15:15:56-07:00",
+        "published_at": null,
+        "template_suffix": null,
+        "status": "active",
+        "published_scope": "web",
+        "tags": "",
+        "admin_graphql_api_id": "gid://shopify/Product/7746346320124",
+        "variants": [
+            {
+                "id": 43258238763260,
+                "product_id": 7746346320124,
+                "title": "Default Title",
+                "price": "6.51",
+                "sku": "",
+                "position": 1,
+                "inventory_policy": "deny",
+                "compare_at_price": null,
+                "fulfillment_service": "manual",
+                "inventory_management": null,
+                "option1": "Default Title",
+                "option2": null,
+                "option3": null,
+                "created_at": "2022-06-22T15:15:56-07:00",
+                "updated_at": "2022-06-22T15:15:56-07:00",
+                "taxable": true,
+                "barcode": null,
+                "grams": 0,
+                "image_id": null,
+                "weight": 0,
+                "weight_unit": "lb",
+                "inventory_item_id": 45353275752700,
+                "inventory_quantity": 0,
+                "old_inventory_quantity": 0,
+                "requires_shipping": true,
+                "admin_graphql_api_id": "gid://shopify/ProductVariant/43258238763260"
+            }
+        ],
+        "options": [
+            {
+                "id": 9881736741116,
+                "product_id": 7746346320124,
+                "name": "Title",
+                "position": 1,
+                "values": [
+                    "Default Title"
+                ]
+            }
+        ],
+        "images": [],
+        "image": null
+    }
+]
